@@ -18,7 +18,7 @@ const ISOLanguages = [
   ];
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.speechSynthesis.cancel();
+    cancel();
     createLanguageOptions();
 });
 
@@ -29,7 +29,6 @@ const handleSpeak  = () => {
     changeLanguage(utterance);
     window.speechSynthesis.speak(utterance);
 }
-
 
 const handleFullscreen = () => {
     const element = document.querySelector('.speech-card__textarea');
@@ -45,23 +44,17 @@ const handleFullscreen = () => {
         element.style.height = '275px'
     }
 
-
     isFullscreen = !isFullscreen;
     setTimeout(() => {
         element.style.transition = '';
     }, 300); 
 }
 
-
-
-
-const changeLanguage = (utterance) => {
+const changeLanguage = (utterance) => 
     utterance.lang = document.querySelector('#language').value;
-}
 
-const cancel = () => {
+const cancel = () => 
     window.speechSynthesis.cancel();
-}
 
 const createLanguageOptions = () => {
     const select = document.querySelector('#language');
