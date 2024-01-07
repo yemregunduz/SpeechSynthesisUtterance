@@ -15,12 +15,12 @@ JavaScript projelerinize harici kütüphanelere ihtiyaç duymadan konuşma sente
 1. **Depoyu Klonla**: Bu depoyu yerel makinenize klonlayın.
 
     ```bash
-    git clone https://github.com/kullanici-adiniz/proje-adiniz.git
+    git clone https://github.com/yemregunduz/SpeechSynthesisUtterance.git
     ```
 
 2. **HTML Dosyasını Aç**: `index.html` dosyasını tercih ettiğiniz web tarayıcınızda açın.
 
-3. **Metinten Sese**: Metin girişine istediğiniz metni yazın ve metinten sese başlamak için "Konuş" düğmesine basın.
+3. **Metinten Sese**: Metin girişine istediğiniz metni yazın ve metinden sese çeviriye başlamak için "Konuş" düğmesine basın.
 
 4. **Dil Seçimi**: Dil seçeneğinden isteğe bağlı konuşma çıktısını özelleştirin.
 
